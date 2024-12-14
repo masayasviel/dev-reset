@@ -10,6 +10,10 @@ npm i
 
 ```shell
 docker-compose up -d
+# generate migrate file
+npm run drizzle:generate
+# migrate
+npm run drizzle:migrate
 ```
 
 ### php my admin
