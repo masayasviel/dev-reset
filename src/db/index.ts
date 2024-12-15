@@ -75,7 +75,7 @@ async function main(): Promise<void> {
       s.add(r.reference_table_name);
       dependencyMap.set(r.table_name, s);
     } else {
-      throw Error('schemeに定義していないテーブルがある');
+      throw Error(`schemeに定義していないテーブル: ${r.table_name}`);
     }
   }
 
