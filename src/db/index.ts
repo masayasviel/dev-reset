@@ -8,11 +8,6 @@ import * as R from 'remeda';
 import { Table, getTableName } from 'drizzle-orm';
 import * as Schema from './schema';
 
-type Record = {
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-  [key: string]: any;
-};
-
 const QUERY = `SELECT
   TABLE_NAME AS table_name,
   REFERENCED_TABLE_NAME AS reference_table_name
