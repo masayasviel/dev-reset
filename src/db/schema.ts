@@ -2,14 +2,14 @@ import { boolean, int, mysqlTable, text, timestamp, uniqueIndex, varchar } from 
 
 export const User = mysqlTable('user', {
   id: int('id').autoincrement().primaryKey(),
-  createdAt: timestamp('created_at').notNull().defaultNow(),
+  createdAt: timestamp('created_at', { mode: 'string' }).notNull().defaultNow(),
   name: varchar('name', { length: 256 }).notNull(),
   code: varchar('code', { length: 256 }).notNull().unique('uniq_code'),
 });
 
 export const Tag = mysqlTable('tag', {
   id: int('id').autoincrement().primaryKey(),
-  createdAt: timestamp('created_at').notNull().defaultNow(),
+  createdAt: timestamp('created_at', { mode: 'string' }).notNull().defaultNow(),
   createdBy: int('created_by')
     .notNull()
     .references(() => User.id, { onDelete: 'cascade' }),
@@ -21,7 +21,7 @@ export const UserTagRelation = mysqlTable(
   'user_tag_relation',
   {
     id: int('id').autoincrement().primaryKey(),
-    createdAt: timestamp('created_at').notNull().defaultNow(),
+    createdAt: timestamp('created_at', { mode: 'string' }).notNull().defaultNow(),
     userId: int('user_id')
       .notNull()
       .references(() => User.id, { onDelete: 'cascade' }),
@@ -38,11 +38,11 @@ export const Article = mysqlTable(
   'article',
   {
     id: int('id').autoincrement().primaryKey(),
-    createdAt: timestamp('created_at').notNull().defaultNow(),
-    updatedAt: timestamp('updated_at')
+    createdAt: timestamp('created_at', { mode: 'string' }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { mode: 'string' })
       .notNull()
       .defaultNow()
-      .$onUpdate(() => new Date()),
+      .$onUpdate(() => new Date().toISOString()),
     title: varchar('title', { length: 256 }).notNull(),
     articlePath: text('article_path').notNull(),
     userId: int('user_id')
@@ -58,7 +58,7 @@ export const ArticleTagRelation = mysqlTable(
   'article_tag_relation',
   {
     id: int('id').autoincrement().primaryKey(),
-    createdAt: timestamp('created_at').notNull().defaultNow(),
+    createdAt: timestamp('created_at', { mode: 'string' }).notNull().defaultNow(),
     articleId: int('article_id')
       .notNull()
       .references(() => Article.id, { onDelete: 'cascade' }),
