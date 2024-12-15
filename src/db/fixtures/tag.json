@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "JavaScript",
+    "isOfficial": true
+  },
+  {
+    "id": 2,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "TypeScript",
+    "isOfficial": true
+  },
+  {
+    "id": 3,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "CoffeeScript",
+    "isOfficial": true
+  },
+  {
+    "id": 4,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "React",
+    "isOfficial": true
+  },
+  {
+    "id": 5,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "Angular",
+    "isOfficial": true
+  },
+  {
+    "id": 6,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "Vue",
+    "isOfficial": true
+  },
+  {
+    "id": 7,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "AWS",
+    "isOfficial": true
+  },
+  {
+    "id": 8,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "AWS lambda",
+    "isOfficial": true
+  },
+  {
+    "id": 9,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "EC2",
+    "isOfficial": true
+  },
+  {
+    "id": 10,
+    "createdAt": "1970-01-01T09:00:00",
+    "createdBy": 1,
+    "name": "S3",
+    "isOfficial": true
+  }
+]

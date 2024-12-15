@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 2,
+    "tagId": 1
+  },
+  {
+    "id": 2,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 2,
+    "tagId": 2
+  },
+  {
+    "id": 3,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 2,
+    "tagId": 3
+  },
+  {
+    "id": 4,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 2,
+    "tagId": 4
+  },
+  {
+    "id": 5,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 2,
+    "tagId": 5
+  },
+  {
+    "id": 6,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 2,
+    "tagId": 6
+  },
+  {
+    "id": 7,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 3,
+    "tagId": 7
+  },
+  {
+    "id": 8,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 3,
+    "tagId": 8
+  },
+  {
+    "id": 9,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 3,
+    "tagId": 9
+  },
+  {
+    "id": 10,
+    "createdAt": "1970-01-01T09:00:00",
+    "userId": 3,
+    "tagId": 10
+  }
+]
