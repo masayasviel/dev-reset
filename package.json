@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@biomejs/biome": "^1.9.4",
+    "aws-sdk": "^2.1692.0",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.38.2",
     "mysql2": "^3.11.5",
